@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <title>Interesse em Venda</title>
+</head>
+<body>
+    <header>
+        <img src="https://www.edmur.com.br/temp/wp-content/uploads/2018/01/edmur-imoveis.png" alt="logo">        
+    </header>
+
+    <div class="container">
+        <div class="container-border">
+            <div class="content">
+                <h1>Interesse em comprar um imóvel</h1>
+                <p>Legal! Nos conte mais sobre o que procura para que em janeiro possamos lhe contatar com mais informações e opções do seu interesse.</p>
+
+                
+
+                <form action="https://jvdev.me/leads" method="POST" class="form-main">
+                    
+                    <input type="text" id="type" name="type" value="" style="display: none;">
+                    <input type="text" name="id" id="id" style="display: none;">                    
+
+                    <div class="select-box">
+                        <select name="tipoImovel" id="tipo-imovel">
+                            <option value="">Tipo de imóvel</option>
+                            <option value="Casa">Casa </option>
+                            <option value="Apartamento">Apartamento</option>
+                            <option value="Sobrado">Sobrado </option>
+                            <option value="Salão">Salão </option>
+                            <option value="Galpão">Galpão </option>
+                            <option value="Sala">Sala </option>
+                            <option value="Terreno">Terreno </option>
+                            <option value="Cobertura">Cobertura</option>
+                        </select>
+                        <select name="finalidade" id="finalidade">
+                            <option value="">Finalidade</option>
+                            <option value="Comercial">Comercial </option>
+                            <option value="Residencial">Residencial</option>
+                        </select>
+                    </div>
+
+                    <div class="select-box">
+                        <select name="dormitorios" id="dormitorios">
+                            <option value="">Quantidade de dormitórios</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5+">5+</option>                            
+                        </select>
+                        <select name="vagas" id="vagas">
+                            <option value="">Quantidade de vagas</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5+">5+</option>                            
+                        </select>
+                    </div>
+                    
+                    <div class="input-box">
+                        <input type="text" name="areaDesejada" placeholder="Area desejada (m²)">                     
+                        <input type="text" name="localizacao" placeholder="Localização">     
+                    </div>
+
+                    <div class="input-box select-box">                        
+                        <input type="text" name="faixaDeValor" placeholder="Faixa de valor (ex. 100.000 - 200.000)">                     
+                        <select name="tempoDeFechamento" id="tempoDeFechamento">
+                            <option value="">Tempo de fechamento</option>
+                            <option value="15 dias">15 dias</option>
+                            <option value="1 mês">1 mês</option>
+                            <option value="Mais de 3 meses">Mais de 3 meses</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" id="send">Enviar</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container-footer">
+            <div class="content-footer">
+                <img src="https://www.edmur.com.br/temp/wp-content/uploads/2020/06/Layout-Interna-Edmur_03.jpg" alt="logo">     
+                <div class="box-contact">
+                    <div class="icon-footer">
+                        <img src="../assets/phone.svg" alt="Telefone"> 
+                    </div>
+                    <div class="description-footer">
+                        <p>TELEFONE:</p>
+                        <p>(11)4996-9900</p>
+                    </div>                    
+
+                </div>
+
+                <div class="box-contact">
+                    <div class="icon-footer">
+                        <img src="../assets/clock.svg" alt="Telefone"> 
+                    </div>
+                    <div class="description-footer">
+                        <p>FUNCIONAMENTO:</p>
+                        <p>A SEX, DAS 9h ÀS 18h</p>
+                        <p>SÁB, DAS 9h ÀS 13h.</p>
+                    </div>                    
+
+                </div>
+
+                <div class="box-contact">
+                    <div class="icon-footer">
+                        <img src="../assets/mail.svg" alt="Telefone"> 
+                    </div>
+                    <div class="description-footer">
+                        <p>EMAIL:</p>
+                        <p>EDMUR@EDMUR.COM.BR</p>
+                    </div>                    
+
+                </div>
+                
+            </div>
+            
+        </div>
+    </footer>
+    
+    
+    <script src="../index.js"></script>
+</body>
+</html>

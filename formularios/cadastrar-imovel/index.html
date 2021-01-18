@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/page-cadastro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <title>Cadastre seu imóvel</title>
+</head>
+<body>
+    <header>
+        <img src="https://www.edmur.com.br/temp/wp-content/uploads/2018/01/edmur-imoveis.png" alt="logo">        
+    </header>
+
+    <div class="container">
+        <div class="container-border">
+            <div class="content-cadastro">
+                <h1 class="title-textbox"></h1>
+                
+                <form action="" class="form-cadastro">
+
+                    <div class="box">
+                        <select name="situacaoImovel" id="situacaoImovel">
+                            <option value="Novo">Novo</option>
+                            <option value="Usado">Usado</option>
+                        </select>
+                        <select name="tipoImovel" id="tipoImovel">
+                            <option value="Casa">Casa</option>
+                            <option value="Apartamento">Apartamento</option>
+                        </select>
+                        <select name="finalidadeImovel" id="finalidadeImovel">
+                            <option value="Comercial">Comercial</option>
+                            <option value="Residencial">Residencial</option>
+                        </select> 
+                    </div>
+
+                    <div class="box">
+                        <select name="tipoEndereco" id="tipoEndereco">
+                            <option value="Avenida">Avenida</option>
+                            <option value="Rua">Rua</option>
+                        </select>
+                        <input type="text" name="rua" id="rua" placeholder="Rua">
+                        <input type="number" name="numero" id="numero" placeholder="Número">
+                        <input type="text" name="complemento" id="complemento" placeholder="Complemento">
+                        <input type="text" name="bairro" id="bairro" placeholder="Bairro">  
+                    </div>
+
+                   
+
+                </form>
+                
+
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container-footer">
+            <div class="content-footer">
+                <img src="https://www.edmur.com.br/temp/wp-content/uploads/2020/06/Layout-Interna-Edmur_03.jpg" alt="logo">     
+                <div class="box-contact">
+                    <div class="icon-footer">
+                        <img src="/assets/phone.svg" alt="Telefone"> 
+                    </div>
+                    <div class="description-footer">
+                        <p>TELEFONE:</p>
+                        <p>(11)4996-9900</p>
+                    </div>                    
+
+                </div>
+
+                <div class="box-contact">
+                    <div class="icon-footer">
+                        <img src="/assets/clock.svg" alt="Telefone"> 
+                    </div>
+                    <div class="description-footer">
+                        <p>FUNCIONAMENTO:</p>
+                        <p>A SEX, DAS 9h ÀS 18h</p>
+                        <p>SÁB, DAS 9h ÀS 13h.</p>
+                    </div>                    
+
+                </div>
+
+                <div class="box-contact">
+                    <div class="icon-footer">
+                        <img src="/assets/mail.svg" alt="Telefone"> 
+                    </div>
+                    <div class="description-footer">
+                        <p>EMAIL:</p>
+                        <p>EDMUR@EDMUR.COM.BR</p>
+                    </div>                    
+
+                </div>
+                
+            </div>
+            
+        </div>
+    </footer>
+    <script src="/index.js"></script>
+</body>
+</html>

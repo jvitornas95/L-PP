@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.4rem;
+}
+
+.container{
+    background-image: url('../assets/fundo-2.jpg');
+    background-size: cover;
+    
+    padding: 10px;
+}
+
+.container-border{
+    
+    border: 3px solid #fdb813;
+    border-radius: 1.8rem;
+    padding: 10px;
+}
+
+.content{    
+    background-color: #d5d6d8;
+    border-radius: 1.8rem;
+    padding: 25px;
+    text-align: center;
+    color: #403f44;
+}
+
+.form-main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form h1{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.form-main h3{
+    margin-top: 15px;
+    
+    font-size: 1.8rem;
+}
+
+.form p{
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+form select,
+form input,
+form label{
+    border: none;
+    box-shadow: 1px 1px 5px;
+    border-radius: .5rem;
+    width: 100%;
+    margin-top: 15px;
+
+    background-color: #fff;
+
+    color: #403f44;
+
+    outline: none;
+
+    padding: 10px;
+
+    font-size: 1.4rem;
+
+    cursor: pointer;
+}
+
+
+button{
+    margin-top: 25px;
+    padding: 10px;
+    border-radius: .8rem;
+
+    font-size: 1.6rem;
+    font-weight: 400;
+
+    background: #fdb813;
+    transform: 0.2s;
+}
+
+button:hover{
+    background: #eee;
+    border: 1px solid #000;
+}
+
+#send{
+    margin-top: 45px;
+}
+
+
+
+@media (min-width: 425px){
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+        padding: 50px 20px;   
+    }
+
+    .container-border{                      
+        padding: 20px;
+    }
+
+    input[type=file]{
+        display: none;
+    }
+
+    .form h1{
+        font-size: 2.4rem;
+    }
+
+    .form p{
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 768px){    
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+        padding: 80px 50px;   
+    }
+
+    .container-border{
+        width: 80%;              
+        padding: 50px;
+    }
+
+    .form h1{
+        font-size: 2.8rem;
+    }
+
+    .form p{
+        font-size: 1.8rem;
+    }
+    
+    .select-box,
+    .input-box{
+        display: flex;
+        justify-content: space-between;
+
+        font-size: 1.8rem;
+    }
+
+    .input-box input,
+    .select-box select{
+        width: 49%;
+    }
+  
+
+    label + input{
+        width: 13vw;
+    }
+
+    button{
+        width: 25%;
+        align-self: center;
+    }
+
+    
+    
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/main-descocupacao.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <title>Interesse em Locação</title>
+</head>
+
+<body>
+    <header>
+        <img src="https://www.edmur.com.br/temp/wp-content/uploads/2018/01/edmur-imoveis.png" alt="logo">
+    </header>
+
+    <div class="container">
+        <div class="container-border">
+            <div class="content">
+
+                <form action="https://jvdev.me/desocupacao" enctype="multipart/form-data" class="form-main" method="POST">
+                    <h1>ENCERRAMENTO DE CONTAS DE CONSUMO DA LOCAÇÃO</h1>
+                    <p>Aqui você anexará os documentos que comprovarão o encerramento de seus contratos junto às
+                        concessionárias de consumo de água, energia e gás durante sua locação.
+                        Para cada concessionária você anexará 4 arquivos.
+                        Anexe o arquivo correspondente a cada campo:</p>
+
+
+                    <input type="text" name="id" id="id" style="display: none;" value="">
+                    <input type="text" name="contrato" id="contrato" style="display: none;" value="">
+
+                    <h3>Agua</h3>    
+                    <div class="form-itens">                
+
+                        <label for="ultima-agua">Última conta (conta final)</label>
+                        <input type="file" name="arquivos" id="ultima-agua">
+
+                        <label for="comprovante-agua">Comprovante de pagamento da conta final</label>
+                        <input type="file" name="arquivos" id="comprovante-agua">
+
+                        <label for="historico-agua">Histórico de consumo (últimos 12 meses)</label>
+                        <input type="file" name="arquivos" id="historico-agua">
+
+                        <label for="protocolo-agua">Protocolo de cancelamento</label>
+                        <input type="file" name="arquivos" id="protocolo-agua">
+
+                    </div>
+                    <h3>Energia</h3>    
+                    <div class="form-itens">                
+
+                        <label for="ultima-luz">Última conta (conta final)</label>
+                        <input type="file" name="arquivos" id="ultima-luz">
+
+                        <label for="comprovante-luz">Comprovante de pagamento da conta final</label>
+                        <input type="file" name="arquivos" id="comprovante-luz">
+
+                        <label for="historico-luz">Histórico de consumo (últimos 12 meses)</label>
+                        <input type="file" name="arquivos" id="historico-luz">
+
+                        <label for="protocolo-luz">Protocolo de cancelamento</label>
+                        <input type="file" name="arquivos" id="protocolo-luz">
+
+                    </div>
+                    <h3>Gás</h3>    
+                    <div class="form-itens">                
+
+                        <label for="ultima-gas">Última conta (conta final)</label>
+                        <input type="file" name="arquivos" id="ultima-gas">
+
+                        <label for="comprovante-gas">Comprovante de pagamento da conta final</label>
+                        <input type="file" name="arquivos" id="comprovante-gas">
+
+                        <label for="historico-gas">Histórico de consumo (últimos 12 meses)</label>
+                        <input type="file" name="arquivos" id="historico-gas">
+
+                        <label for="protocolo-gas">Protocolo de cancelamento</label>
+                        <input type="file" name="arquivos" id="protocolo-gas">
+
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-footer">
+            <div class="content-footer">
+                <img src="https://www.edmur.com.br/temp/wp-content/uploads/2020/06/Layout-Interna-Edmur_03.jpg"
+                    alt="logo">
+                <div class="box-contact">
+                    <div class="icon-footer">
+                        <img src="../assets/phone.svg" alt="Telefone">
+                    </div>
+                    <div class="description-footer">
+                        <p>TELEFONE:</p>
+                        <p>(11)4996-9900</p>
+                    </div>
+
+                </div>
+
+                <div class="box-contact">
+                    <div class="icon-footer">
+                        <img src="../assets/clock.svg" alt="Telefone">
+                    </div>
+                    <div class="description-footer">
+                        <p>FUNCIONAMENTO:</p>
+                        <p>A SEX, DAS 9h ÀS 18h</p>
+                        <p>SÁB, DAS 9h ÀS 13h.</p>
+                    </div>
+
+                </div>
+
+                <div class="box-contact">
+                    <div class="icon-footer">
+                        <img src="../assets/mail.svg" alt="Telefone">
+                    </div>
+                    <div class="description-footer">
+                        <p>EMAIL:</p>
+                        <p>EDMUR@EDMUR.COM.BR</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="../ed-f-arquivos.js"></script>
+</body>
+
+</html>

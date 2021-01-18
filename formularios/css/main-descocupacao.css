@@ -1,0 +1,68 @@
+form label,
+form input{
+    margin-top: 5px;
+    font-size: 12px;    
+    text-align: center;
+}
+
+:root{
+    font-size: 62.5%
+}
+
+.form-main h1{
+    font-size: 2.4rem;
+}
+
+.form-main h3{
+    font-size: 2.2rem;
+}
+
+.form-itens{
+    display: flex;    
+    justify-content: space-between;    
+    flex-direction: column;
+}  
+
+.form-itens label{
+    align-self: center;
+    width: 100%;
+}
+
+.form-main h3{
+    margin-top: 30px;
+}
+
+.form-main p{
+    margin-top: 20px;
+}
+
+.form-main button{
+    margin-bottom: 25px;
+}
+
+@media (min-width: 425px){
+    form-itens{
+        display: flex;    
+        justify-content: space-between;    
+        flex-direction: column;
+    }  
+}
+
+@media (min-width: 768px){    
+    
+    .form-itens{
+        display: flex;    
+        justify-content: space-between;   
+        flex-direction: row; 
+        flex-wrap: wrap;
+    }  
+    
+    .form-itens label{
+        align-self: center;
+        width: 49%;
+    }
+
+    form label{
+        padding: 15px;
+    }
+}
