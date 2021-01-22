@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do proprietario</title>
+    <meta property="og:title" content="Edmur Imóveis">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.edmur.com.br">
+    <meta property="og:site_name" content="Edmur Imóveis">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Area administrativa para proprietarios">
+    
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <section id="init">
+
+            <img src="https://www.edmur.com.br/temp/wp-content/uploads/2018/01/edmur-imoveis.png" alt="logo-edmur">
+
+        </section>
+
+        
+
+        <form class="form-files">
+            <h3>Anexe os documentos</h3>
+            <label for="doc-identidade">Documentos de identidade</label>
+            <input type="file" name="doc-identidade" id="doc-identidade">
+
+            <label for="estado-civil">Comprovante de estado Civil</label>
+            <input type="file" name="estado-civil" id="estado-civil">
+
+            <label for="ctps">Carteira de trabalho</label>
+            <input type="file" name="ctps" id="ctps">
+
+            <label for="comp-renda">Últimos comprovantes de renda</label>
+            <input type="file" name="comp-renda" id="comp-renda">
+
+            <label for="comp-endereco">Comprovante de endereço</label>
+            <input type="file" name="comp-endereco" id="comp-endereco">
+
+            <label for="comp-aluguel">Últimos comprovantes de aluguel</label>
+            <input type="file" name="comp-aluguel" id="comp-aluguel">
+
+            <button id="ref-bancaria">Referência bancária</button>
+
+            <button id="ref-pessoal">2 Referências pessoais</button>            
+
+        </form>
+
+        <section class="ref-bancaria">
+
+            <label for="banco">Banco</label>
+            <input type="text" name="banco">
+
+            <label for="agencia">Agencia</label>
+            <input type="text" name="agencia">
+            
+            <label for="conta">Conta</label>
+            <input type="text" name="conta">
+
+            <button id="save-bank-data">Salvar</button>
+
+        </section>
+
+        <section class="ref-pessoal">
+
+            <label for="banco">Banco</label>
+            <input type="text" name="banco">
+
+            <label for="agencia">Agencia</label>
+            <input type="text" name="agencia">
+            
+            <label for="conta">Conta</label>
+            <input type="text" name="conta">
+
+            <button id="save-bank-data">Salvar</button>
+
+        </section>
+
+    </div>
+
+    <script src="../js/index.js"></script>
+
+</body>
+
+</html>

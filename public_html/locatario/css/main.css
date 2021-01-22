@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;    
+    background: #f0f2f5;
+}
+
+.confirmation h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.container {
+    margin: 40px auto;
+    width: min(80vw, 500px);
+    text-align: center;
+}
+
+.background-paper {
+    width: 100%;
+    height: 60vh;
+    margin-top: 3rem;
+
+    background-image: url('../assets/undraw_Relaxing_at_home_re_mror.svg');
+   
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+    transform: rotateY(180deg);    
+}
+
+#init {    
+    margin-top: 35vh;
+    animation-name: apear;
+    animation-duration: 1000ms;
+}
+
+#show{
+    animation-name: apear;
+    animation-duration: 1000ms;
+}
+
+@keyframes apear{
+    0%{
+        opacity: 0%;
+    }
+   
+    100%{
+        opacity: 1;
+    }
+}

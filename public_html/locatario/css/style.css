@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;    
+    background: #f0f2f5;    
+}
+
+.container{
+    text-align: center;
+    width: min(80vw, 500px);
+    height: 80vh;
+    
+    margin: 40px auto;
+}
+
+.form-files{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 1.5rem;
+}
+
+.form-files label,
+.form-files button{
+    cursor: pointer;
+    width: 80%;
+    height: 3rem;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    
+    background: #fff;
+    border: 1px solid #414141;
+    border-radius: .5rem;
+}
+
+
+.form-files label:hover,
+.form-files button:hover{
+    background: #fdb913;
+    transition: 0.5s;
+}
+
+#init {    
+    margin-top: 35vh;
+    animation-name: apear;
+    animation-duration: 1000ms;
+}
+
+.show{
+    animation-name: apear;
+    animation-duration: 1000ms;
+}
+
+@keyframes apear{
+    0%{
+        opacity: 0%;
+    }
+   
+    100%{
+        opacity: 1;
+    }
+}

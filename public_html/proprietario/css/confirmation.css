@@ -1,0 +1,19 @@
+.confirmation{
+    margin-top: -15vh;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+
+@media(min-width: 618px){
+    .confirmation{
+        margin-top: 3vh;
+    }
+
+    .confirmation h3{
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do proprietario</title>
+    <meta property="og:title" content="Edmur Imóveis">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.edmur.com.br">
+    <meta property="og:site_name" content="Edmur Imóveis">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Area administrativa para proprietarios">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/form-ed.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <section id="init"> 
+
+            <img src="https://www.edmur.com.br/temp/wp-content/uploads/2018/01/edmur-imoveis.png" alt="logo-edmur">
+            
+        </section>
+        
+        <section id="edit-data" style="display: none;">
+            <h3>Preencha os dados que deseja editar:</h3>
+            <form action="">
+                <div class="input-line input-aluguel">
+                    <label for="aluguel">Aluguel:</label>
+                    <input type="text" id="aluguel" name="aluguel">
+                </div>
+                <div class="input-line input-venda">
+                    <label for="venda">Venda:</label>
+                    <input type="text" id="venda" name="venda">
+                </div>
+                <div class="input-line">
+                    <label for="iptu">IPTU:</label>
+                    <input type="text" id="iptu" name="iptu">
+                </div>
+                <div class="input-line">
+                    <label for="condominio">Condominio:</label>
+                    <input type="text" id="condominio" name="condominio">
+                </div>
+                <div class="input-line">
+                    <label for="ocupacao">Ocupação:</label>
+                    <select name="ocupacao" id="ocupacao">
+                        <option value=""></option>
+                        <option value="Vago">Vago</option>
+                        <option value="Vago">Inquilino</option>
+                        <option value="Vago">Proprietario</option>
+                    </select>
+                </div>
+                <div class="text-box">
+                    <label for="info-adicional">Informações adicionais</label>
+                    <textarea name="info-adicional" id="info-adicional"></textarea>
+                </div>
+                
+                <button class="btn">Enviar</button>
+                
+                
+            </form>
+        </section>
+    </div>
+    
+    <script src="./js/edita-dados.js"></script>
+</body>
+
+</html>
