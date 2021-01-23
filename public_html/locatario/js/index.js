@@ -4,17 +4,7 @@ const sectionBanco = document.querySelector('.ref-bancaria');
 const sectionPessoal = document.querySelector('.ref-pessoal');
 const formFiles = document.querySelector('.form-files');
 
-sectionBanco.style.display = 'none';
-sectionPessoal.style.display = 'none';
-formFiles.style.display = 'none';
-
-setTimeout(() => {
-
-    document.getElementById('init').style.display = 'none';
-    formFiles.style.display = 'flex';
-    formFiles.classList.add('show');
-
-}, 1000)
+initialize();
 
 inputs.forEach(input => {
 
@@ -22,6 +12,7 @@ inputs.forEach(input => {
     input.addEventListener('change', el => {
 
         document.querySelector(`[for=${input.id}]`).textContent = input.files[0].name;
+        document.querySelector(`.${input.id}`).firstElementChild.src = '../assets/checkmark-circle-outline.svg';
 
     });
 
@@ -57,3 +48,27 @@ buttons.forEach(btn => {
     });
 
 });
+
+function initialize(){
+
+    sectionBanco.style.display = 'none';
+    sectionPessoal.style.display = 'none';
+    formFiles.style.display = 'none';
+
+    setTimeout(() => {
+
+        document.getElementById('init').style.display = 'none';
+        formFiles.style.display = 'flex';
+        formFiles.classList.add('show');
+    
+    }, 1000);
+    
+}
+
+
+document.querySelector('#save-bank-data').addEventListener('click', e => {
+        
+        document.querySelector(`.ref-bancaria-check`).firstElementChild.src = '../assets/checkmark-circle-outline.svg';
+
+});    
+

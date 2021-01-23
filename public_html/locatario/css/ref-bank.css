@@ -1,0 +1,16 @@
+.ref-bancaria{
+    display: flex;    
+    flex-direction: column;
+    justify-content: space-between;
+    
+    width: min(80vw, 600px);
+}
+
+.ref-bancaria h3{
+    margin-bottom: 2.5rem;
+}
+
+.btn{
+    margin-top: 3rem;
+    align-self: center;
+}

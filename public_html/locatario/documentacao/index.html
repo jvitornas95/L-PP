@@ -9,10 +9,12 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.edmur.com.br">
     <meta property="og:site_name" content="Edmur Imóveis">
-    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/favicons.ico" type="image/x-icon">
     <meta name="description" content="Area administrativa para proprietarios">
     
+    <link rel="stylesheet" href="../css/form-ed.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/ref-bank.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -31,57 +33,83 @@
 
         <form class="form-files">
             <h3>Anexe os documentos</h3>
-            <label for="doc-identidade">Documentos de identidade</label>
-            <input type="file" name="doc-identidade" id="doc-identidade">
 
-            <label for="estado-civil">Comprovante de estado Civil</label>
-            <input type="file" name="estado-civil" id="estado-civil">
+            <div class="input-file doc-identidade">                
+                <img src="../assets/add-circle-outline.svg">                
+                <label for="doc-identidade">Documentos de identidade</label>
+            </div>            
+            <input type="file" name="doc-identidade" multiple id="doc-identidade">
 
-            <label for="ctps">Carteira de trabalho</label>
+            <div class="input-file estado-civil">
+                <img src="../assets/add-circle-outline.svg">
+                <label for="estado-civil">Comprovante de estado Civil</label>                
+            </div>   
+            <input type="file" name="estado-civil" id="estado-civil">        
+
+            <div class="input-file ctps">
+                <img src="../assets/add-circle-outline.svg">                
+                <label for="ctps">Carteira de trabalho</label>
+            </div>
             <input type="file" name="ctps" id="ctps">
 
-            <label for="comp-renda">Últimos comprovantes de renda</label>
+            <div class="input-file comp-renda">
+                <img src="../assets/add-circle-outline.svg">                
+                <label for="comp-renda">Últimos comprovantes de renda</label>
+            </div>
             <input type="file" name="comp-renda" id="comp-renda">
 
-            <label for="comp-endereco">Comprovante de endereço</label>
+            <div class="input-file comp-endereco">
+                <img src="../assets/add-circle-outline.svg">                
+                <label for="comp-endereco">Comprovante de endereço</label>
+            </div>
             <input type="file" name="comp-endereco" id="comp-endereco">
 
-            <label for="comp-aluguel">Últimos comprovantes de aluguel</label>
+            <div class="input-file comp-aluguel">
+                <img src="../assets/add-circle-outline.svg">                
+                <label for="comp-aluguel">Últimos comprovantes de aluguel</label>
+            </div>
             <input type="file" name="comp-aluguel" id="comp-aluguel">
-
-            <button id="ref-bancaria">Referência bancária</button>
-
-            <button id="ref-pessoal">2 Referências pessoais</button>            
+            
+            <div class="input-file ref-bancaria-check">
+                <img src="../assets/add-circle-outline.svg">     
+                <button id="ref-bancaria">Referência bancária</button>
+            </div>
+            
+            <div class="input-file">
+                <img src="../assets/add-circle-outline.svg">     
+                <button id="ref-pessoal">2 Referências pessoais</button>
+            </div>
+            
+            <button type="submit">Enviar</button>
 
         </form>
 
         <section class="ref-bancaria">
 
-            <label for="banco">Banco</label>
-            <input type="text" name="banco">
+            <h3>Preencha seus dados bancários</h3>
 
-            <label for="agencia">Agencia</label>
-            <input type="text" name="agencia">
-            
-            <label for="conta">Conta</label>
-            <input type="text" name="conta">
+            <div class="input-line">
+                <label for="banco">Banco:</label>
+                <input type="text" name="banco" required>
+            </div>
 
-            <button id="save-bank-data">Salvar</button>
+            <div class="input-line">                
+                <label for="agencia">Agencia:</label>
+                <input type="text" name="agencia" required>
+            </div>
+
+            <div class="input-line">                
+                <label for="conta">Conta:</label>
+                <input type="text" name="conta" required>
+            </div>
+
+            <button id="save-bank-data" class="btn">Salvar</button>
 
         </section>
 
         <section class="ref-pessoal">
 
-            <label for="banco">Banco</label>
-            <input type="text" name="banco">
-
-            <label for="agencia">Agencia</label>
-            <input type="text" name="agencia">
             
-            <label for="conta">Conta</label>
-            <input type="text" name="conta">
-
-            <button id="save-bank-data">Salvar</button>
 
         </section>
 

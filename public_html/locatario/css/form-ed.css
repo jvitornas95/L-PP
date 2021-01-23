@@ -1,0 +1,79 @@
+form{  
+    height: 80vh;
+
+    padding: 20px;
+    
+}
+
+.input-line{
+    font-size: 0.9rem;
+
+    width: 100%;
+
+    padding: 5px;
+    margin-top: 5px;
+
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.input-line label{
+    margin-right: 10px;
+    width: 130px;
+    text-align: left;
+}
+
+.input-line input,
+.input-line select{
+    height: 1.9rem;
+    width: 100%;
+
+    border-radius: 0.3rem;
+    border: 1px solid #414141;
+    outline: none;
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+
+    padding-left: 5px;
+    
+}
+
+#venda{
+    display: inline-block;
+}
+
+.text-box{
+    margin-top: 15px;
+}
+
+.text-box textarea{
+    margin-top: 5px;
+    padding: 5px 10px;
+    text-align: left;
+    font-size: 0.9rem;
+
+    resize: none;
+    outline: none;
+
+    width: min(70vw, 450px);
+    height: 8rem;
+
+    font-size: 1rem;
+    font-size: 0.8rem;
+    font-family: 'Poppins', sans-serif;
+
+    border-radius: 0.3rem;
+}
+
+.btn {
+    margin-top: 25px;
+    
+    width: 60%;
+    height: 2rem;
+
+    border-radius: 0.3rem;
+    border: 1px solid;
+
+    background: #fdb913;
+}
